@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (type) query += `type=${type}&`;
         if (gender) query += `gender=${gender}&`;
 
-        fetchCharacters(query.slice(0, -1));  // Remove trailing "&"
+        fetchCharacters(query.slice(0, -1));
     }
 
     function fetchCharacters(url) {
